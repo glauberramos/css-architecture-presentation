@@ -22,8 +22,170 @@
     </hgroup>
   </slide>
 
-  <slide hidden>
-    Hidden slides are left out of the presentation.
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/thoughtworks.jpg" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/css.gif" alt="Description" title="Description">
+    </article>
+  </slide>
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/dog.gif" alt="Description" title="Description">
+    </article>
+  </slide>
+  
+  <slide class="fill nobackground" style="background-image: url(images/monster.png)"></slide>
+  
+  <slide class="fill nobackground" style="background-image: url(images/pre-processors.jpg)"></slide>
+  
+  <slide class="fill nobackground" style="background-image: url(images/pre-processors2.jpg)"></slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Variables</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        $textColor: #123AD3;
+
+        .button {
+          color: $textColor;
+        }
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Variables</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        $textColor: #123AD3;
+
+        .button {
+          color: $textColor;
+        }
+      </pre>
+      <pre class="prettyprint" data-lang="css">
+        .button {
+          color: #123AD3;
+        }
+      </pre>
+    </article>
+  </slide>
+
+<slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Nesting</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        .button {
+          font-size: 1em;
+
+          .icon {
+            color: blue;
+          }
+        }
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Nesting</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        .button {
+          font-size: 1em;
+
+          .icon {
+            color: blue;
+          }
+        }
+      </pre>
+      <pre class="prettyprint" data-lang="css">
+        .button {
+          font-size: 1em;
+        }
+
+        .button .icon {
+          color: blue;
+        }
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Mixins</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        @mixin button {
+          font-size: 1em;
+        }
+
+        button {
+          @include button;
+        } 
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Mixins</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        @mixin button {
+          font-size: 1em;
+        }
+
+        button {
+          @include button;
+        } 
+      </pre>
+      <pre class="prettyprint" data-lang="css">
+        button {
+          font-size: 1em;
+        }
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Test</h2>
+    </hgroup>
+    <article>
+      <p>AVOID</p>
+      <ul class="build">
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </ul>
+      <p>USE</p>
+      <ul class="build">
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </ul>
+    </article>
   </slide>
 
   <slide>
@@ -83,38 +245,6 @@ function helloWorld(world) {
 
   <slide class="backdrop"></slide>
 
-  <slide>
-    <article class="flexbox vcenter">
-      <img src="images/css.gif" alt="Description" title="Description">
-    </article>
-  </slide>
-  <slide>
-    <article class="flexbox vcenter">
-      <img src="images/dog.gif" alt="Description" title="Description">
-    </article>
-  </slide>
-  <slide class="fill nobackground" style="background-image: url(images/monster.png)"></slide>
-  <slide class="fill nobackground" style="background-image: url(images/pre-processors.jpg)"></slide>
-  <slide class="fill nobackground" style="background-image: url(images/pre-processors2.jpg)"></slide>
-  <slide>
-    <hgroup>
-      <h2>Test</h2>
-    </hgroup>
-    <article>
-      <p>AVOID</p>
-      <ul class="build">
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-      <p>USE</p>
-      <ul class="build">
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-    </article>
-  </slide>
 </slides>
 
 </body>
