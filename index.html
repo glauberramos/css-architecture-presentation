@@ -41,9 +41,25 @@
   
   <slide class="fill nobackground" style="background-image: url(images/monster.png)"></slide>
   
-  <slide class="fill nobackground" style="background-image: url(images/pre-processors.jpg)"></slide>
+  <slide>
+      <hgroup>
+        <h2>Problems with CSS</h2>
+      </hgroup>
+      <article>
+        <ul class="build">
+          <li>Your CSS is a mess</li>
+          <li>It's hard to mantain</li>
+          <li>It's hard to change</li>
+          <li>No organization</li>
+          <li>Too specific - not reusable</li>
+          <li>Not testable</li>
+        </ul>
+      </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/pre-processors.png)"></slide>
   
-  <slide class="fill nobackground" style="background-image: url(images/pre-processors2.jpg)"></slide>
+  <slide class="fill nobackground" style="background-image: url(images/pre-processors2.png)"></slide>
   
   <slide>
     <hgroup>
@@ -66,7 +82,7 @@
       <h2>Sass</h2>
       <h3>Variables</h3>
     </hgroup>
-    <article>
+    <article class="smaller">
       <pre class="prettyprint" data-lang="sass">
         $textColor: #123AD3;
 
@@ -105,7 +121,7 @@
       <h2>Sass</h2>
       <h3>Nesting</h3>
     </hgroup>
-    <article>
+    <article class="smaller">
       <pre class="prettyprint" data-lang="sass">
         .button {
           font-size: 1em;
@@ -130,6 +146,53 @@
   <slide>
     <hgroup>
       <h2>Sass</h2>
+      <h3>Extend</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="sass">
+        .button {
+          font-size: 1em;
+        }
+
+        .button_primary {
+          @extend .button;
+          width: 300px;
+        } 
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
+      <h3>Extend</h3>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint" data-lang="sass">
+        .button {
+          font-size: 1em;
+        }
+
+        .button_primary {
+          @extend .button;
+          width: 300px;
+        } 
+      </pre>
+      <pre class="prettyprint" data-lang="css">
+        .button, .button_primary {
+          font-size: 1em;
+        }
+
+        .button_primary {
+          width: 300px;
+        }
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Sass</h2>
       <h3>Mixins</h3>
     </hgroup>
     <article>
@@ -138,7 +201,7 @@
           font-size: 1em;
         }
 
-        button {
+        .button {
           @include button;
         } 
       </pre>
@@ -156,92 +219,31 @@
           font-size: 1em;
         }
 
-        button {
+        .button {
           @include button;
         } 
       </pre>
       <pre class="prettyprint" data-lang="css">
-        button {
+        .button {
           font-size: 1em;
         }
       </pre>
     </article>
   </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Test</h2>
-    </hgroup>
-    <article>
-      <p>AVOID</p>
-      <ul class="build">
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-      <p>USE</p>
-      <ul class="build">
-        <li>test</li>
-        <li>test</li>
-        <li>test</li>
-      </ul>
-    </article>
-  </slide>
+<slide class="fill nobackground" style="background-image: url(images/methods.png)"></slide>
 
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-        &lt;script type='text/javascript'&gt;
-          // Say hello world until the user starts questioning
-          // the meaningfulness of their existence.
-          function helloWorld(world) {
-            <b>for (var i = 42; --i &gt;= 0;) {
-              alert('Hello ' + String(world));
-            }</b>
-          }
-        &lt;/script&gt;
-      </pre>
-    </article>
-  </slide>
+<slide class="fill nobackground" style="background-image: url(images/base.png)"></slide>
 
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-        // Say hello world until the user starts questioning
-        // the meaningfulness of their existence.
-        function helloWorld(world) {
-          for (var i = 42; --i &gt;= 0;) {
-            alert('Hello ' + String(world));
-          }
-      }
-    </pre>
-    <pre class="prettyprint" data-lang="css">
-      &lt;style&gt;
-        p { color: pink }
-        b { color: blue }
-      &lt;/style&gt;
-      </pre>
-      <pre class="prettyprint" data-lang="html">
-      &lt;!DOCTYPE html>
-      &lt;html>
-      &lt;head>
-        &lt;title>My Awesome Page&lt;/title>
-      &lt;/head>
-      &lt;body>
-        &lt;p&gt;Hello world&lt;/p&gt;
-      &lt;body>
-      &lt;/html>
-    </pre>
-    </article>
-</slide>
+<slide class="fill nobackground" style="background-image: url(images/layout.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/module.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/state.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/theme.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/framework.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/thanks.jpg)"></slide>
 
