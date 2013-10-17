@@ -47,7 +47,7 @@
       </hgroup>
       <article>
         <ul class="build">
-          <li>Your CSS is a mess</li>
+          <li>Usually is a mess</li>
           <li>It's hard to mantain</li>
           <li>It's hard to change</li>
           <li>No organization</li>
@@ -231,19 +231,150 @@
     </article>
   </slide>
 
+<slide>
+      <hgroup>
+        <img src="images/compassLogo.png" />
+      </hgroup>
+      <article>
+        <ul class="build">
+          <li>CSS3 Mixins</li>
+          <li>Typography Mixins</li>
+          <li>Utilities Mixins</li>
+          <li>Easy way to create sprites</li>
+        </ul>
+      </article>
+  </slide>
+
+<slide class="fill nobackground" style="background-image: url(images/normalize.png)"></slide>
+
 <slide class="fill nobackground" style="background-image: url(images/methods.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/methods2.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/base.png)"></slide>
 
+<slide>
+  <hgroup>
+    <h2>Base</h2>
+  </hgroup>
+  <article class="smaller">
+    <pre class="prettyprint" data-lang="sass">
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        background: #333;
+        font-size: 16px;
+      }
+
+      table {
+        margin: 0 auto;
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      h1, h2, h3 {
+        margin: 1em;
+      }
+
+    </pre>
+  </article>
+</slide>
+
 <slide class="fill nobackground" style="background-image: url(images/layout.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/layouts.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/module.png)"></slide>
 
+<slide class="fill nobackground" style="background-image: url(images/modules.png)"></slide>
+
 <slide class="fill nobackground" style="background-image: url(images/state.png)"></slide>
 
-<slide class="fill nobackground" style="background-image: url(images/theme.png)"></slide>
+<slide class="fill nobackground" style="background-image: url(images/states.png)"></slide>
+
+<slide>
+  <hgroup>
+    <h2>structure</h2>
+  </hgroup>
+  <article class="smaller">
+    <pre class="prettyprint" data-lang="file system">
+      |-- stylesheets/
+      |   |-- modules/
+      |       |-- _base.scss
+      |       |-- _buttons.scss
+      |       |-- _search.scss
+      |       |-- _media.scss
+      |       |-- _header.scss
+      |       |-- _footer.scss
+      |   |-- _variables.scss
+      |   |-- _framework.scss
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>_framework.scss</h2>
+  </hgroup>
+  <article class="smaller">
+    <pre class="prettyprint" data-lang="sass">
+      // base
+      @import "variables"
+      @import "base"
+
+      // layout
+      @import "header"
+      @import "footer"
+
+      // modules
+      @import "buttons"
+      @import "search"
+      @import "media"
+    </pre>
+  </article>
+</slide>
 
 <slide class="fill nobackground" style="background-image: url(images/framework.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/testing.png)"></slide>
+
+<slide>
+      <hgroup>
+        <h2>Live Style Guide</h2>
+      </hgroup>
+      <article>
+        <ul class="build">
+          <li>Keep things consistant</li>
+          <li>Speed up development</li>
+          <li>Testing tool for your style</li>
+        </ul>
+      </article>
+  </slide>
+
+<slide class="fill nobackground" style="background-image: url(images/styleguide1.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/styleguide2.png)"></slide>
+
+<slide>
+      <hgroup>
+        <h2>CSS Critic</h2>
+      </hgroup>
+      <article>
+        <ul class="build">
+          <li>Automated test for your style</li>
+          <li>Based on screenshots</li>
+          <li>Use phantom js</li>
+          <li>Easy to integrate on build tools (jenkins, bamboo, cruise control, etc...)</li>
+          <li>Still alpha</li>
+        </ul>
+      </article>
+  </slide>
+
+<slide class="fill nobackground" style="background-image: url(images/csscritic1.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/csscritic2.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/thanks.jpg)"></slide>
 
