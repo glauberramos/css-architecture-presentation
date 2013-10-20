@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Arquitetura de CSS',
+    title: 'Front-end architecture of OpenMrs Ref App',
     subtitle: 'Glauber Ramos',
     //eventInfo: {
     //  title: 'Google I/O',
