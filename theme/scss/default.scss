@@ -1020,3 +1020,12 @@ aside.gdbar {
     font-family: monospace !important;
   }
 }
+
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+slide ul h2 {
+  margin-bottom: 20px;
+}

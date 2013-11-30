@@ -248,9 +248,90 @@
 
 <slide class="fill nobackground" style="background-image: url(images/normalize.png)"></slide>
 
-<slide class="fill nobackground" style="background-image: url(images/methods.png)"></slide>
+<slide class="fill nobackground" style="background-image: url(images/neat.png)"></slide>
 
-<slide class="fill nobackground" style="background-image: url(images/methods2.png)"></slide>
+<slide class="fill nobackground" style="background-image: url(images/methods3.jpg)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/guia.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/oocss.png)"></slide>
+
+<slide>
+      <hgroup>
+        <h2>OOCSS</h2>
+      </hgroup>
+      <article>
+        <ul class="build">
+          <h2>Pontos Positivos</h2>
+          <li>DRY CSS, SMACSS e BEM são implementações</li>
+          <li>O mais importante é criar objetos reutilizáveis</li>
+          <li>Um objeto tem que parecer igual não importa onde tu coloca ele</li>
+          <li>Separe estrutura do visual</li>
+          <li>Separe o conteúdo do container</li>
+          <li>Evite estilos baseados na localização deles</li>
+          <li>Domine a cascata!</li>
+          <h2>Pontos Negativos</h2>
+          <li>Ponto ruim - escolha do nome</li>
+        </ul>
+      </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/mediaobject.png)"></slide>
+
+<slide>
+    <hgroup>
+      <h2>BEM</h2>
+
+    </hgroup>
+    <article>
+      <ul class="build">
+        <h2>Pontos Positivos</h2>
+        <li>Modular</li>
+        <li>Bloco, Elemento e Modificador</li>
+        <li>Foi feito para projetos grandes</li>
+        <h2>Pontos Negativos</h2>
+        <li>Nomenclatura é complicada</li>
+        <li>Utiliza _, __ e --</li>
+      </ul>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+      <h2>DRY CSS</h2>
+
+    </hgroup>
+    <article>
+      <ul class="build">
+        <h2>Pontos Positivos</h2>
+        <li>Modular</li>
+        <li>Agrupe propriedades reutilizáveis</li>
+        <h2>Pontos negativos</h2>
+        <li>Classes baseadas no estilo ao invez da função/conteúdo</li>
+        <li>Utiliza ID's para estilizar</li>
+        <li>Utiliza uppercase e lowercase</li>
+        
+      </ul>
+    </article>
+</slide>
+
+<slide>
+    <hgroup>
+      <h2>SMACSS</h2>
+
+    </hgroup>
+    <article>
+      <ul class="build">
+        <h2>Pontos Positivos</h2>
+        <li>Modular</li>
+        <li>Categorização</li>
+        <li>Base, Layout, Módulos, Stados e Temas</li>
+        <li>Livro digital online</li>
+        <h2>Pontos Negativos</h2>
+        <li>Versão completa é paga</li>
+      </ul>
+    </article>
+</slide>
 
 <slide class="fill nobackground" style="background-image: url(images/base.png)"></slide>
 
@@ -278,7 +359,6 @@
       h1, h2, h3 {
         margin: 1em;
       }
-
     </pre>
   </article>
 </slide>
@@ -304,6 +384,7 @@
       |-- stylesheets/
       |   |-- modules/
       |       |-- _base.scss
+      |       |-- _utils.scss
       |       |-- _buttons.scss
       |       |-- _search.scss
       |       |-- _media.scss
@@ -324,6 +405,7 @@
       // base
       @import "variables"
       @import "base"
+      @import "utils"
 
       // layout
       @import "header"
@@ -337,17 +419,27 @@
   </article>
 </slide>
 
+<slide class="fill nobackground" style="background-image: url(images/frameworks.png)"></slide>
+
 <slide class="fill nobackground" style="background-image: url(images/framework.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/dicas.png)"></slide>
 
+<slide class="fill nobackground" style="background-image: url(images/modulos.png)"></slide>
+
 <slide class="fill nobackground" style="background-image: url(images/classid.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/tag.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/floats.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/important.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/stylehtml.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/cascata.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/gerado.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/testing.png)"></slide>
 
@@ -369,13 +461,17 @@
 
 <slide class="fill nobackground" style="background-image: url(images/styleguide2.png)"></slide>
 
+<slide class="fill nobackground" style="background-image: url(images/kss.png)"></slide>
+
+<slide class="fill nobackground" style="background-image: url(images/lint.png)"></slide>
+
 <slide>
       <hgroup>
         <h2>CSS Critic</h2>
       </hgroup>
       <article>
         <ul class="build">
-          <li>Testes automatizados</li>
+          <li>Testes de regressão</li>
           <li>Baseados em screenshots</li>
           <li>Usa phantom js</li>
           <li>Fácil de integrar com ferramentas de build (jenkins, bamboo, cruise control, etc...)</li>
@@ -383,10 +479,6 @@
         </ul>
       </article>
   </slide>
-
-<slide class="fill nobackground" style="background-image: url(images/csscritic1.png)"></slide>
-
-<slide class="fill nobackground" style="background-image: url(images/csscritic2.png)"></slide>
 
 <slide class="fill nobackground" style="background-image: url(images/thanks.jpg)"></slide>
 
